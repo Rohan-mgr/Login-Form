@@ -1,0 +1,46 @@
+<%- include('partials/header'); -%>
+
+    <div class="container">
+        <h2>My App</h2>
+        <div class="login-form">
+            <form action="/" method="POST">
+                <% for(let i=0; i<errors.length; i++){ %>
+                    <p class="err-msg">
+                        <%=errors[i]%>
+                    </p>
+                    <% } %>
+                        <div class="icons">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="fullName" id="fullName" placeholder="Full Name" autocomplete="off" required>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fas fa-phone"></i>
+                            <input type="number" name="phone" id="phone" placeholder="Contact Number" autocomplete="off" required>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fas fa-key"></i>
+                            <input type="password" name="password" class="password" placeholder="Password" autocomplete="off" required />
+                            <i id="eye-slash"></i>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fas fa-key"></i>
+                            <input type="password" name="password2" class="password" placeholder="Confirm Password" autocomplete="off" required />
+                            <i id="eye-slash"></i>
+                        </div>
+
+                        <button type="submit ">Sign Up</button>
+            </form>
+        </div>
+        <p class="accountPara ">Already have an Account? <span><a href="/login ">LogIn</a></span></p>
+    </div>
+
+
+    <%- include('partials/footer'); -%>

@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+    <div class="image-container"></div>
+    <div class="container">
+        <h2>My App</h2>
+        <div class="login-form">
+            <form action="/login" method="POST">
+                <% for(let i=0; i<errors.length; i++){ %>
+                    <p class="err-msg">
+                        <%=errors[i]%>
+                    </p>
+                    <% } %>
+                        <div class="icons">
+                            <i class="fas fa-user"></i>
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                        </div>
+
+                        <div class="icons">
+                            <i class="fas fa-key"></i>
+                            <input type="password" name="password" class="password" placeholder="Password" required>
+                            <i id="eye-slash"></i>
+                        </div>
+
+                        <button type="submit">LogIn</button>
+            </form>
+        </div>
+    </div>
+
+    <%- include('partials/footer'); -%>

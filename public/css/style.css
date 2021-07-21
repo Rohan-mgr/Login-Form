@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/img/london.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.err-msg {
+    color: white;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 7px;
+    width: 100%;
+    color: red;
+    padding: 3px 0;
+    text-align: center;
+}
+
+span a {
+    color: #66bfbf;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+span a:hover {
+    color: #8d8df3;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+form input {
+    background: transparent;
+    color: white;
+    border: 2px solid #66bfbf;
+    margin: 7px;
+    padding: 7px;
+    width: 100%;
+    border-radius: 7px;
+    outline: none;
+}
+
+.focus-password {
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    color: white;
+    border: 2px solid #66bfbf;
+    width: 35%;
+    padding: 20px;
+    border-radius: 36px;
+    box-shadow: 0 0 6px #66bfbf;
+    margin-top: 8rem;
+    backdrop-filter: blur(5px);
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid #66bfbf;
+    padding: 4px;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 23px;
+    margin-top: 5px;
+}
+
+#eye-slash {
+    position: absolute;
+    margin-top: 20px;
+    left: 86%;
+    cursor: pointer;
+    color: #66bfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #66bfbf;
+    color: white;
+}
+
+.accountPara {
+    margin-left: 23px;
+    margin-top: 5px;
+}
+
+h2 {
+    border-bottom: 2px solid #66bfbf;
+    width: fit-content;
+    text-align: left;
+    margin-left: 23px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.fas {
+    margin-top: 20px;
+    color: #66bfbf;
+}
+
+form input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #fff;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .container {
+        color: white;
+        border: 1px solid #66bfbf;
+        width: 70%;
+        padding: 8px;
+        height: fit-content;
+    }
+    form input {
+        background: transparent;
+        color: white;
+        border: 1px solid #66bfbf;
+        width: 100%;
+        border-radius: 7px;
+        outline: none;
+    }
+    body {
+        background-color: rgb(35, 35, 44);
+        background-image: none;
+    }
+    #eye-slash {
+        margin-top: 16px;
+    }
+    .fas {
+        margin-top: 18px;
+    }
+    .accountPara {
+        font-size: 13px;
+    }
+}
