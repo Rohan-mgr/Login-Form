@@ -95,7 +95,8 @@ button:hover {
     color: white;
 }
 
-.accountPara {
+.accountPara,
+.backToSignUP {
     margin-left: 23px;
     margin-top: 5px;
 }
@@ -151,7 +152,8 @@ input[type="password"]:focus {
     .fas {
         margin-top: 18px;
     }
-    .accountPara {
+    .accountPara,
+    .backToSignUP {
         font-size: 13px;
     }
 }
